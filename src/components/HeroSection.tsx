@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
+import CyberParticles from "./CyberParticles";
 
 const HeroSection = () => {
   const scrollToSection = (id: string) => {
@@ -12,6 +13,7 @@ const HeroSection = () => {
     <section id="home" className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card/30" />
+      <CyberParticles />
       
       <div className="container mx-auto relative z-10 animate-fade-in-up">
         <div className="flex flex-col items-center text-center space-y-8">
