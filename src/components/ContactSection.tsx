@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import CyberParticles from "./CyberParticles";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 px-4 bg-gradient-to-b from-background to-card/30">
-      <div className="container mx-auto">
+    <section id="contact" className="py-20 px-4 bg-gradient-to-b from-background to-card/30 relative overflow-hidden">
+      <CyberParticles />
+      <div className="container mx-auto relative z-10">
         <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">
             Gostou do meu trabalho?

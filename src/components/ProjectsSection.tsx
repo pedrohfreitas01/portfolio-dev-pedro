@@ -1,9 +1,7 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
+import ProjectCarousel from "./ProjectCarousel";
 
 const projects = [
   {
@@ -30,6 +28,22 @@ const projects = [
     liveUrl: "https://exemplo.com",
     githubUrl: "https://github.com/exemplo",
   },
+  {
+    title: "Sistema de Gestão",
+    description: "Sistema completo de gestão empresarial com controle de estoque, vendas e relatórios.",
+    image: project1,
+    stacks: ["React", "Node.js", "MySQL"],
+    liveUrl: "https://exemplo.com",
+    githubUrl: "https://github.com/exemplo",
+  },
+  {
+    title: "Portfolio Interativo",
+    description: "Portfolio moderno com animações 3D, transições suaves e design responsivo.",
+    image: project2,
+    stacks: ["React", "Three.js", "Tailwind"],
+    liveUrl: "https://exemplo.com",
+    githubUrl: "https://github.com/exemplo",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -45,53 +59,7 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <Card key={project.title} className="overflow-hidden group animate-fade-in-up" style={{ animationDelay: `${index * 150}ms` }}>
-              <div className="relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              
-              <CardHeader>
-                <CardTitle className="text-xl">{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </CardHeader>
-
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {project.stacks.map((stack) => (
-                    <span
-                      key={stack}
-                      className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary border border-primary/20"
-                    >
-                      {stack}
-                    </span>
-                  ))}
-                </div>
-              </CardContent>
-
-              <CardFooter className="gap-2">
-                <Button variant="default" size="sm" className="flex-1" asChild>
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Ver Projeto
-                  </a>
-                </Button>
-                <Button variant="outline" size="sm" className="flex-1" asChild>
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Github className="w-4 h-4 mr-2" />
-                    Ver Código
-                  </a>
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
+        <ProjectCarousel projects={projects} />
       </div>
     </section>
   );

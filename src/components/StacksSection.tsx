@@ -1,12 +1,17 @@
-import { Code2, Database, Container, Cpu, Globe, Server } from "lucide-react";
+import reactIcon from "@/assets/icons/react.svg";
+import nodejsIcon from "@/assets/icons/nodejs.svg";
+import postgresqlIcon from "@/assets/icons/postgresql.svg";
+import dockerIcon from "@/assets/icons/docker.svg";
+import typescriptIcon from "@/assets/icons/typescript.svg";
+import restApiIcon from "@/assets/icons/rest-api.png";
 
 const stacks = [
-  { name: "React", icon: Globe, color: "text-blue-400" },
-  { name: "Node.js", icon: Server, color: "text-green-400" },
-  { name: "PostgreSQL", icon: Database, color: "text-blue-300" },
-  { name: "Docker", icon: Container, color: "text-blue-500" },
-  { name: "TypeScript", icon: Code2, color: "text-blue-600" },
-  { name: "APIs Rest", icon: Cpu, color: "text-cyan-400" },
+  { name: "React", icon: reactIcon },
+  { name: "Node.js", icon: nodejsIcon },
+  { name: "PostgreSQL", icon: postgresqlIcon },
+  { name: "Docker", icon: dockerIcon },
+  { name: "TypeScript", icon: typescriptIcon },
+  { name: "APIs Rest", icon: restApiIcon },
 ];
 
 const StacksSection = () => {
@@ -29,8 +34,8 @@ const StacksSection = () => {
               className="group flex flex-col items-center gap-4 p-6 rounded-2xl bg-card border border-primary/20 hover:border-primary/50 transition-all duration-300 hover:scale-110 card-glow"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className={`${stack.color} transition-transform duration-300 group-hover:rotate-12`}>
-                <stack.icon className="w-12 h-12" />
+              <div className="w-12 h-12 transition-transform duration-300 group-hover:rotate-12">
+                <img src={stack.icon} alt={stack.name} className="w-full h-full object-contain" />
               </div>
               <span className="text-sm font-medium">{stack.name}</span>
             </div>
