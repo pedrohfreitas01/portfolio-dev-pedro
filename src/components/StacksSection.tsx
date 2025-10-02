@@ -1,16 +1,15 @@
 import reactIcon from "@/assets/icons/react.svg";
 import nodejsIcon from "@/assets/icons/nodejs.svg";
 import postgresqlIcon from "@/assets/icons/postgresql.svg";
-import dockerIcon from "@/assets/icons/docker.svg";
 import typescriptIcon from "@/assets/icons/typescript.svg";
 import restApiIcon from "@/assets/icons/rest-api.png";
-import jsIcon from "@/assets/icons/JavaScript-logo.png";
+import jsIcon from "@/assets/icons/javaScript-logo.png";
 import cypressIcon from "@/assets/icons/cypress-svgrepo-com.svg";
-import tailwindIcon from "@/assets/icons/Tailwind_CSS_Logo.svg";
-import css3Icon from "@/assets/icons/CSS3_logo_and_wordmark.svg";
-import htmlIcon from "@/assets/icons/HTML5_logo_and_wordmark.svg";
-import gitIcon from "@/assets/icons/Git_icon.svg";
-import pythonIcon from "@/assets/icons/Python-logo-notext.svg";
+import tailwindIcon from "@/assets/icons/tailwind_CSS_Logo.svg";
+import css3Icon from "@/assets/icons/css3_logo_and_wordmark.svg";
+import htmlIcon from "@/assets/icons/html5_logo_and_wordmark.svg";
+import gitIcon from "@/assets/icons/git_icon.svg";
+import pythonIcon from "@/assets/icons/python-logo-notext.svg";
 
 
 
