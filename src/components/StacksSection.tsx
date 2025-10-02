@@ -3,7 +3,7 @@ import nodejsIcon from "@/assets/icons/nodejs.svg";
 import postgresqlIcon from "@/assets/icons/postgresql.svg";
 import typescriptIcon from "@/assets/icons/typescript.svg";
 import restApiIcon from "@/assets/icons/rest-api.png";
-import jsIcon from "@/assets/icons/javaScript-logo.png";
+import jsIcon from "@/assets/icons/JavaScript-logo.png";
 import cypressIcon from "@/assets/icons/cypress-svgrepo-com.svg";
 import tailwindIcon from "@/assets/icons/tailwind_CSS_Logo.svg";
 import css3Icon from "@/assets/icons/css3_logo_and_wordmark.svg";
