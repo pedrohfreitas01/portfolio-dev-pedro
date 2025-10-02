@@ -13,11 +13,10 @@ const Index = () => {
       <ServicesSection />
       <ContactSection />
       
-      <footer className="py-8 text-center text-muted-foreground border-t border-border">
-        <p>© 2024 Portfolio. Desenvolvido com ❤️</p>
-      </footer>
+      
     </main>
   );
 };
 
 export default Index;
+

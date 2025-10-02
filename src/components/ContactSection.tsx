@@ -4,7 +4,10 @@ import CyberParticles from "./CyberParticles";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 px-4 bg-gradient-to-b from-background to-card/30 relative overflow-hidden">
+    <section
+      id="contact"
+      className="py-20 px-4 bg-gradient-to-b from-background to-card/30 relative overflow-hidden"
+    >
       <CyberParticles />
       <div className="container mx-auto relative z-10">
         <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
@@ -17,7 +20,7 @@ const ContactSection = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/pedro-cafe/"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
@@ -31,7 +34,7 @@ const ContactSection = () => {
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/pedrohfreitas01"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
@@ -44,10 +47,7 @@ const ContactSection = () => {
               </div>
             </a>
 
-            <a
-              href="mailto:seuemail@exemplo.com"
-              className="group"
-            >
+            <a href="mailto:pedrofreitas_ph@hotmail.com" className="group">
               <div className="flex flex-col items-center gap-4 p-6 rounded-2xl bg-card border border-primary/30 hover:border-primary transition-all duration-300 hover:scale-110 card-glow">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
                   <Mail className="w-8 h-8 text-primary" />
@@ -57,7 +57,7 @@ const ContactSection = () => {
             </a>
 
             <a
-              href="/curriculo.pdf"
+              href="/src/assets/Curriculo_Pedro_Cafe.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
@@ -73,7 +73,7 @@ const ContactSection = () => {
 
           <div className="mt-12">
             <Button variant="hero" size="lg" asChild>
-              <a href="mailto:seuemail@exemplo.com">
+              <a href="mailto:pedrofreitas_ph@hotmail.com">
                 <Mail className="w-5 h-5 mr-2" />
                 Enviar Mensagem
               </a>

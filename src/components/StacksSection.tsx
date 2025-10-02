@@ -4,14 +4,32 @@ import postgresqlIcon from "@/assets/icons/postgresql.svg";
 import dockerIcon from "@/assets/icons/docker.svg";
 import typescriptIcon from "@/assets/icons/typescript.svg";
 import restApiIcon from "@/assets/icons/rest-api.png";
+import jsIcon from "@/assets/icons/JavaScript-logo.png";
+import cypressIcon from "@/assets/icons/cypress-svgrepo-com.svg";
+import tailwindIcon from "@/assets/icons/Tailwind_CSS_Logo.svg";
+import css3Icon from "@/assets/icons/CSS3_logo_and_wordmark.svg";
+import htmlIcon from "@/assets/icons/HTML5_logo_and_wordmark.svg";
+import gitIcon from "@/assets/icons/Git_icon.svg";
+import pythonIcon from "@/assets/icons/Python-logo-notext.svg";
+
+
 
 const stacks = [
+  { name: "Js", icon: jsIcon },
+  { name: "Html", icon: htmlIcon },
+  { name: "Css", icon: css3Icon },
+  { name: "Git", icon: gitIcon },
+
   { name: "React", icon: reactIcon },
+
   { name: "Node.js", icon: nodejsIcon },
   { name: "PostgreSQL", icon: postgresqlIcon },
-  { name: "Docker", icon: dockerIcon },
+  { name: "Tailwind", icon: tailwindIcon },
+  { name: "python", icon: pythonIcon },
+
   { name: "TypeScript", icon: typescriptIcon },
   { name: "APIs Rest", icon: restApiIcon },
+  { name: "Cypress", icon: cypressIcon },
 ];
 
 const StacksSection = () => {
